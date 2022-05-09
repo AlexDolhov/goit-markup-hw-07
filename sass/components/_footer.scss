@@ -1,0 +1,152 @@
+/* Footer section */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--bg-color-first);
+}
+
+.logo__footer {
+    color: var(--main-color);
+}
+
+.footer-address {
+    margin-top: 20px;
+}
+
+.footer-address-list .item+.item {
+    margin-top: 9px;
+}
+
+.footer-address-link {
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.footer-contacts-link {
+    color: var(--text-color-secondary);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+
+.footer .link {
+    transition: color var(--anim-time) var(--anim-time-line);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+    color: var(--accent-color);
+}
+
+/* Footer connect */
+.footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.connect {
+    margin-left: 70px;
+}
+
+.connect .title,
+.sign-in .title {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.connect .list {
+    display: flex;
+    justify-content: center;
+}
+
+.connect .item+.item {
+    margin-left: 10px;
+}
+
+.connect .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: var(--footer-icon-bg);
+
+    transition: background-color var(--anim-time) var(--anim-time-line);
+}
+
+.connect .icon {
+    fill: var(--main-color);
+}
+
+.connect .link:hover,
+.connect .link:focus {
+    background-color: var(--accent-color);
+}
+
+/* Footer sign-in section */
+
+.sign-in {
+    margin-left: auto;
+}
+
+.sign-in .form {
+    display: inline-flex;
+    align-items: center;
+}
+
+.sign-in-field {
+    width: 358px;
+
+    padding: 15px 16px;
+    margin-right: 12px;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 1px solid var(--sign-in-border);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    /* font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.sign-in-field::placeholder {
+    /* font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400; */
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: var(--text-color-secondary);
+}
+
+.sign-in-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-btn .icon {
+    margin-left: 10px;
+    fill: var(--main-color);
+}
