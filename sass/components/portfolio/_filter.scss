@@ -1,19 +1,18 @@
 /* Porttfolio filter */
 
-.portfolio-filter {
+.filter {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 
     padding-bottom: 16px;
     margin-bottom: 34px;
+    &__item + &__item {
+        margin-left: 8px;
+    }
 }
 
-.portfolio-filter .item+.item {
-    margin-left: 8px;
-}
-
-.portfolio-filter-button {
+.filter__button {
     padding: 6px 22px;
 
     color: var(--title-color);
@@ -31,20 +30,20 @@
     transition: color var(--anim-time) var(--anim-time-line),
         background-color var(--anim-time) var(--anim-time-line),
         box-shadow var(--anim-time) var(--anim-time-line);
-}
-
-.portfolio-filter-button:hover,
-.portfolio-filter-button:focus {
-    color: var(--main-color);
-    background-color: var(--accent-color);
-    /* shadow-middle */
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.portfolio-filter-button.current {
-    color: var(--main-color);
-    background-color: var(--accent-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-        0px 2px 2px rgba(0, 0, 0, 0.12);
+    
+    &:hover,    
+    &:focus {
+        color: var(--main-color);
+        background-color: var(--accent-color);
+        /* shadow-middle */
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+    
+    &--current {
+        color: var(--main-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
